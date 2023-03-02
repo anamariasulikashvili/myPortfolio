@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="photos/icon.PNG" alt=""></div>
+        <div class="hamburger"><img src="photos/icons8-menu-rounded-48.png" alt=""></div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-info">About</a></li>
+                <li><a href="#services">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #020207;
+    margin: auto;
+}
+@font-face{
+    font-family:'Regular';
+    src: url(fonts/Regular.ttf);
+}
+@font-face{
+    font-family: 'LobsterTwo-Regular';
+    src: url(fonts/LobsterTwo-Regular.otf);
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #020207;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    position: fixed;
+}
+.logo img{
+    width: 10em;
+    padding: 15px;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+font-family: "Regular";
+display: block;
+color: #aba6ea ;
+font-size: 35px;
+padding: 10px 25px;
+border-radius: 50px;
+transition: 0.2s;
+margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    box-shadow: 1px 2px 10px #65609f ;
+border-radius: 10px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 200px;
+}
+.me{
+    width: 30em;
+    border-radius: 30%;
+}
+.main-container p{
+color:#aba6ea ;
+font-size: 4em;
+text-align: center;
+font-family:'LobsterTwo-Regular';
+border-right: 1px solid #aba6ea;
+padding: 20px;
+}
+.main-text{
+    display: flex;
+}
+.main-container p:nth-child(even){
+ border: none;
+}
+.texts{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 20px;
+}
+.texts h1{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 2.8em;
+    border-bottom: 1px dashed #aba6ea;
+}
+.skill-info{
+    width: 600px;
+    border: 1px solid #aba6ea;
+    border-radius: 1em;
+   
+}
+.skill-info p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.perc{
+    width: 80%;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    text-align: right;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.skillset-first{
+    background-color: rgb(0, 143, 10);
+    width: 60%;
+    border-radius: 30px;
+}
+.skillset-second{
+    background-color: rgb(0, 143, 10);
+    width: 50%;
+    border-radius: 30px;
+}
+.skillset-third{
+    background-color: rgb(0, 143, 10);
+    width: 20%;
+    border-radius: 30px;
+}
+.about-info{    
+    width: 600px;
+  border: 1px  solid #aba6ea;
+  border-radius: 1em;
+  margin: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.info-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a1d;
+    padding: 50px;
+}
+.about-info p span{
+  color:#aba6ea;
+  font-family: 'Regular';
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.about-info p{
+    color:#aba6ea;
+    font-family: 'Regular';
+    font-size: 1.4em;
+}
+.services{
+  margin: 10px;
+  padding: 110px;
+  font-family: 'Regular';
+  display: flex;
+  justify-content: space-around;
+}
+.services p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 30px;
+    padding: 20px;
+}
+.card-1 img{
+    width: 25em;
+    border-radius: 30px;
+}
+
+.card-2 img{
+    width: 25em;
+    border-radius: 30px;
+}
+.card-1{
+    width: 400px;
+    border-radius: 30px;
+    height: 500px;
+    box-shadow: 10px 20px 30px #201c55;
+}
+.card-2{
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 10px 20px 30px #201c55;
+    height: 500px;
+}
+.card-1 a{
+    color: #aba6ea;
+    padding: 20px;
+}
+.card-2 a{
+    color: #aba6ea;
+    padding: 20px;
+}
+.card-1:hover{
+    box-shadow: 10px 20px 30px #403982;
+    color: #6b65b8;
+}
+.card-2:hover{
+    box-shadow: 10px 20px 30px #403982;
+    color: #6b65b8;
+}
+.footer-cont{
+    background-color: #0a0a1d;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #59559c;
+}
+.icons img{
+    width: 2.3em;
+    margin: 10px;
+}
+.footer-cont p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 1.4em;
+}
+@media screen and (max-width:1150px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 135px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #020207;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 30px;
+    }
+    .services{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .div{
+        flex-direction: column;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 100px;
+    }
+    .me{
+        width: 25em;
+    }
+    .main-container p{
+        font-size: 3em;
+        padding: 50px;
+        }
+    .icons img{
+        width: 1.8em;
+    }
+    .footer-cont p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:650px){
+    .logo img{
+        width: 6em;
+        padding: 5px;
+    }
+    .hamburger img{
+        width: 2em;
+    }
+    .me{
+        width: 16em;
+    }
+    .main-container p{
+        font-size:2.3em ;
+    }
+    .texts h1{
+        font-size: 2em;
+    }
+    .about-info{
+        width: 400px;
+    }
+    .about-info p{
+        font-size: 1em;
+    }
+    .skill-info{
+        width: 400px;
+    }
+    .skill-info p{
+        font-size: 1em;
+    }
+    .card-1{
+        width: 250px;
+        height: 350px;
+    }
+    .card-1 img{
+        width: 250px;
+    }
+    .card-2{
+        width: 250px;
+        height: 350px;
+    }
+    .card-2 img{
+        width: 250px;
+    }
+    .services p{
+        font-size: 20px;
+    }
+    .card-1 a, .card-2 a{
+        font-size: 13px ;
+    }
+    .icons img{
+        width: 1.5em;
+    }
+    .footer-cont p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:460px){
+    .logo img{
+        width: 5em;
+    }
+    .hamburger img{
+        width: 1.6em;
+    }
+    .main-container p{
+        font-size:1.6em ;
+    }
+    .texts h1{
+        font-size: 1.5em;
+    }
+    .about-info{
+        width: 300px;
+    }
+    .about-info p{
+        font-size: 0.9em;
+    }
+    .skill-info{
+        width: 300px;
+    }
+    .skill-info p{
+        font-size: 0.9em;
+    }
+}
+
+    </style>
+    
+    <main>
+        <div class="main-container" id="home"><!--subheading-->
+            <div class="main-text">
+                <p>Hi, <br>I'm Anamaria</p>
+                <p>Welcome <br>To My Portfolio</p>
+            </div>
+            <img src="photos/me.jpg" alt="" class="me"><!--my image-->
+        </div>
+       
+
+        <div class="info-cont" id="about-info"><!--container about me-->
+            <div class="texts">
+                <h1>About me</h1><!--subhead-->
+            </div>
+        <div class="about-info">
+        <p>
+            <span class="title">Name:</span>
+            Anamaria Sulikashvili
+        </p>
+        <p>
+            <span class="title">Profile</span>
+            Front-end Developer
+        </p>
+        <p>
+            <span class="title">Education:</span>
+           IT Step Academy
+        </p>
+        <p>
+            <span class="title">Email:</span>
+           sulikashviliannemarie@gmail.com
+        </p>
+        <p>
+            <span class="title">Phone:</span>
+            (+995)  571 233 535
+        </p>
+        </div>
+
+        <div class="texts">
+            <h1>Skills</h1><!--subhead-->
+        </div>
+        <div class="skill-info"><!--percentage about my knowledge-->
+           <p>HTML</p>
+           <div class="perc">
+            <div class="skillset-first">60%</div>
+        </div>
+        <p>CSS</p>
+        <div class="perc">
+         <div class="skillset-second">50%</div>
+     </div>
+     <p>JavaScript</p>
+        <div class="perc">
+         <div class="skillset-third">20%</div>
+     </div>
+        </div>
+    </div>
+     
+    <div class="texts">
+        <h1>Services</h1><!--subhead-->
+       </div>
+    <div class="services" id="services"><!--main container of services-->
+        <div class="card-1">
+            <img src="photos/neon2.png" alt="">
+            <p>● Web Design</p>
+            <a href="https://github.com/anamariasulikashvili">See Portfolio</a>
+        </div>
+        <div class="card-2">
+            <img src="photos/neon.png" alt="">
+            <p>● Graphic Design</p>
+            <a href="https://www.behance.net/annemarsulikas1">See Portfolio</a>
+        </div>
+    </div>
+   </main>
+   <footer>
+    <div class="footer-cont" id="contact"><!--footer-->
+        <p>Contact For More:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/keira.collins.3591"><img src="photos/fb.png" alt=""></a><!--facebook icon-->
+            <a href="https://www.instagram.com/miss_annemariee/"><img src="photos/ig.png" alt=""></a><!--instagram icon-->
+            <a href=""><img src="photos/emaill.png" alt=""></a><!--email icon-->
+        </div>
+
+    </div>
+   </footer>
+   <script>
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
